@@ -9,7 +9,7 @@
         return{
             info:null,
             result:null,
-            errorMsg:""
+            errorMsg:"",
         }
        
     },
@@ -40,6 +40,11 @@
             }
         }
     },
+    computed:{
+         propiedad(e) {
+            return e + 4
+        }
+    },  
     components:{
         Vista,
         Error
@@ -54,7 +59,6 @@
                 <input type="text"  v-model="info">
                 <button type="submit">Buscar</button>
             </form>
-            
             <Vista v-if="result" 
                 :titulo="result.Title"
                 :img="result.Poster"

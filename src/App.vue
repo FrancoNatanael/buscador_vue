@@ -2,17 +2,20 @@
 
 
   import Buscador from './components/Buscador.vue'
+  import MenuMovies from './components/MenuMovies.vue'
 
   export default{
     name:'App',
     components:{
-      Buscador
+      Buscador,
+      MenuMovies
     }
   }
 </script>
 
 <template>
-  <Buscador/>
+  <MenuMovies/>
+  <RouterView/>
 </template>
 
 

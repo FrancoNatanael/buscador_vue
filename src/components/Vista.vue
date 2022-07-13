@@ -1,6 +1,7 @@
 <script>
     export default{
-        props:['titulo','img','release','duracion']
+        props:['titulo','img','release','duracion'],
+        emit:['evento'],
     }
 </script>
 
@@ -11,6 +12,7 @@
                 <h2>{{titulo}}</h2>
                 <p>Año : {{release}}</p>
                 <p>Duracion :  {{duracion}}</p>
+                
             </div>
         </article>
 </template>
